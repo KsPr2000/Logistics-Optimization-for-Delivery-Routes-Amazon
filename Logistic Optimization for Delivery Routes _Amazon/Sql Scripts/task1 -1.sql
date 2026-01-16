@@ -1,0 +1,4 @@
+SELECT Order_ID, COUNT(*) AS cnt
+FROM Orders
+GROUP BY Order_ID
+HAVING COUNT(*) > 1;
